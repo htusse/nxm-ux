@@ -426,22 +426,11 @@ curl -X POST http://localhost/nxm-ux-tsa/backend/api/submit-form.php \
 2. Hard refresh (Ctrl+Shift+R or Cmd+Shift+R)
 3. Check if Bootstrap CSS is loaded in DevTools → Network tab
 
-## 🎥 Video Demo
-
-Video demonstration available at: [See VIDEO_LINK.txt]
 
 ## 📝 License
 
 This project is created for assessment purposes.
 
-## 👥 Team
-
-- **HR CHAMP**: Yen Desierto Yen
-- **SCRUM MASTER**: Herve Tusse Herve
-
-## 📞 Support
-
-For issues or questions, please contact the development team.
 
 ---
 
