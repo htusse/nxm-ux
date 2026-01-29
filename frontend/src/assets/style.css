@@ -1,0 +1,129 @@
+/* Custom Global Styles - NXM UX TSA */
+
+/* Gotham Font Family */
+@font-face {
+  font-family: 'Gotham';
+  src: url('/fonts/Gotham Regular/Gotham Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('/fonts/Gotham Medium/Gotham Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('/fonts/Gotham Bold/Gotham Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('/fonts/Gotham Light/Gotham Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('/fonts/Gotham Book/Gotham Book.otf') format('opentype');
+  font-weight: 350; /* distinct weight for Book */
+  font-style: normal;
+}
+
+:root {
+  --primary-color: #456276;
+  --primary-light: #4d6a90;
+  --secondary-color: #98c1d9;
+  --text-primary: #456276;
+  --text-secondary: #8d99ae;
+  --text-light: #9ca3af;
+  --bg-light: #f8f9fa;
+  --bg-white: #ffffff;
+  --border-color: #e5e7eb;
+  --success-color: #10b981;
+  --danger-color: #ef4444;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Gotham', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  color: var(--text-primary);
+  background-color: var(--bg-white);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Form validation feedback */
+.invalid-feedback {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.875em;
+  color: var(--danger-color);
+}
+
+.is-invalid {
+  border-color: var(--danger-color);
+}
+
+.is-valid {
+  border-color: var(--success-color);
+}
+
+/* Mobile optimizations */
+@media (max-width: 767px) {
+  /* Improve touch targets */
+  button,
+  .btn {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Better spacing on mobile */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Prevent text from being too small */
+  body {
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  /* Optimize images for mobile */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Tablet optimizations */
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* Landscape mobile */
+@media (max-width: 767px) and (orientation: landscape) {
+  .min-vh-90 {
+    min-height: auto;
+  }
+}
